@@ -35,6 +35,6 @@ def sendmail(sender, receivers, subject, content):
 response = urllib2.urlopen(URL)
 data = response.read()
 
-if 'CXBL' in data:  //CXBL => Cinemax Bellandur
+if 'CXBL' in data:  #CXBL => Cinemax Bellandur
     sendmail(FROM_EMAIL, TO_EMAIL, SUBJECT, CONTENT)
 
